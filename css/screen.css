@@ -1,0 +1,170 @@
+/* CSS reset */
+* {
+    box-sizing: border-box;
+}
+
+article, aside, dialog, figure, footer, header, hgroup, nav, section { display: block; }
+body, form, ol, ul, dl, li, dt, dd, td, th ,tr, h1, h2, h3, h4, h5, h6, p, pre, blockquote, address { margin: 0; padding: 0; }
+ol, ul { list-style: none; }
+img { border: 0; }
+fieldset { margin: 0; padding: 0; border: 0; }
+input, select, textarea { font-size: 100%; vertical-align: middle; }
+input:focus { outline: none; }
+table { border-collapse: collapse; border-spacing: 0; empty-cells: show; }
+th { text-align: left; }
+a:focus { overflow: hidden; }
+a { text-decoration: none; }
+
+/* Global */
+
+body {
+    background: none repeat scroll 0 0 #f6f6f6;
+}
+
+body, input {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 18px;
+    overflow-x: hidden; 
+}
+
+h1 {
+    background: #2980b9;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.loop-container {
+    position: relative;
+    top: 62px;
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.master {
+    display: inline-block;
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.master,
+form a:link,
+form a:visited,
+form a:active {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+/* Menubar */
+
+.menubar_container {
+    width: 100%;
+    background: #0E5A89;
+    position: fixed;
+    z-index: 5;
+}
+
+.menubar {
+    border-bottom: 2px solid #033B5E;
+    width: 900px;
+    margin: 0 auto; 
+    padding: 10px 0;
+}
+
+/* Checkbox Pseduo-Buttons */
+
+.container-data {
+    background: #ecf0f1;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+
+.product-container {
+      position: fixed;
+      top: 62px;
+      bottom: 0;
+      left: 0;
+      background: #4798D4;
+      overflow-y: scroll;
+      padding: 0;
+}
+
+.tagbox input[type=checkbox] {
+    display: table-cell;
+    vertical-align: middle;
+    width: auto;
+    height: auto;
+    display: none;
+}
+
+.tagbox input[type=checkbox]:checked + label {
+    background: #4798D4;
+    color: #E0EEF7;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.tagbox label {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 20px;
+    margin: 0;
+    background: #555457;
+    color: #9C9C9C;
+    height: auto;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.agent-table,
+.caller-table {
+    padding: 0;
+    width: 100%;
+}
+
+
+/* Table */
+
+.table {
+    width: 95%;
+    margin: 20px auto 40px auto;
+}
+
+th {
+    font-size: 12px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+td {
+    font-size: 12px;
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 700px) {
+    .product-container {
+        position: relative;
+        width: 100%;
+    }
+
+    .tagbox {
+        width: auto;
+    }
+}
