@@ -37,7 +37,9 @@ define('FS_DOMAIN','freeswitch-server.com');
 $myqueues = array('queue1', 'queue2', 'queue3');
 ```
 MQ_* is your RabbitMQ server information.
+
 FS_* is your freesiwtch server information.
+
 $myqueues is a list of your fifo queues.
 
 
